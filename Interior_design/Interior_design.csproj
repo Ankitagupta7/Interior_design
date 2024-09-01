@@ -1,0 +1,542 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77829EFA-CCEC-47F6-9A92-37470EAAA0EE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interior_design</RootNamespace>
+    <AssemblyName>Interior_design</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="almira.aspx" />
+    <Content Include="bathroom.aspx" />
+    <Content Include="Bedroom.aspx" />
+    <Content Include="book.aspx" />
+    <Content Include="cart.aspx" />
+    <Content Include="checkout.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="Dining.aspx" />
+    <Content Include="Forgotpassword.aspx" />
+    <Content Include="icon\1.jpg" />
+    <Content Include="images\source\bathroom1.jpg" />
+    <Content Include="images\source\bathroom10.jpg" />
+    <Content Include="images\source\bathroom2.jpg" />
+    <Content Include="images\source\bathroom3.jpg" />
+    <Content Include="images\source\bathroom4.jpg" />
+    <Content Include="images\source\bathroom5.jpg" />
+    <Content Include="images\source\bathroom6.jpg" />
+    <Content Include="images\source\bathroom7.jpg" />
+    <Content Include="images\source\bathroom8.jpg" />
+    <Content Include="images\source\bathroom9.jpg" />
+    <Content Include="images\source\bedroom-3-1632733415-PHr1c.jpg" />
+    <Content Include="images\source\book-background.jpg" />
+    <Content Include="images\source\corona-background.jpg" />
+    <Content Include="images\source\corona-m1.png" />
+    <Content Include="images\source\corona-m2-img.png" />
+    <Content Include="images\source\corona-m2.mp4" />
+    <Content Include="images\source\corona-m3-1.png" />
+    <Content Include="images\source\corona-m3-2.png" />
+    <Content Include="images\source\corona-m3-3.png" />
+    <Content Include="images\source\corona-m3-4.png" />
+    <Content Include="images\source\corona-m3-5.png" />
+    <Content Include="images\source\design-background.jpg" />
+    <Content Include="images\source\dining-room1.jpg" />
+    <Content Include="images\source\dining-room10.jpg" />
+    <Content Include="images\source\dining-room2.jpg" />
+    <Content Include="images\source\dining-room3.jpg" />
+    <Content Include="images\source\dining-room4.jpg" />
+    <Content Include="images\source\dining-room5.jpg" />
+    <Content Include="images\source\dining-room6.jpg" />
+    <Content Include="images\source\dining-room7.jpg" />
+    <Content Include="images\source\dining-room8.jpg" />
+    <Content Include="images\source\dining-room9.jpg" />
+    <Content Include="images\source\how-background.jpg" />
+    <Content Include="images\source\how-m6-1.png" />
+    <Content Include="images\source\how-m6-2.png" />
+    <Content Include="images\source\how-m6-3.png" />
+    <Content Include="images\source\icons\home-i-1.png" />
+    <Content Include="images\source\icons\home-i-2.png" />
+    <Content Include="images\source\icons\home-i-3.png" />
+    <Content Include="images\source\icons\home-i-4.png" />
+    <Content Include="images\source\icons\home-i-5.png" />
+    <Content Include="images\source\icons\home-i-6.png" />
+    <Content Include="images\source\icons\home-i-7.png" />
+    <Content Include="images\source\icons\home-i-8.png" />
+    <Content Include="images\source\kids-bedroom1.jpg" />
+    <Content Include="images\source\kids-bedroom10.jpg" />
+    <Content Include="images\source\kids-bedroom2.jpg" />
+    <Content Include="images\source\kids-bedroom3.jpg" />
+    <Content Include="images\source\kids-bedroom4.jpg" />
+    <Content Include="images\source\kids-bedroom5.jpg" />
+    <Content Include="images\source\kids-bedroom6.jpg" />
+    <Content Include="images\source\kids-bedroom7.jpg" />
+    <Content Include="images\source\kids-bedroom8.jpg" />
+    <Content Include="images\source\kids-bedroom9.jpg" />
+    <Content Include="images\source\kitchen1.jpg" />
+    <Content Include="images\source\kitchen10.jpg" />
+    <Content Include="images\source\kitchen2.jpg" />
+    <Content Include="images\source\kitchen3.jpg" />
+    <Content Include="images\source\kitchen4.jpg" />
+    <Content Include="images\source\kitchen5.jpg" />
+    <Content Include="images\source\kitchen6.jpg" />
+    <Content Include="images\source\kitchen7.jpg" />
+    <Content Include="images\source\kitchen8.jpg" />
+    <Content Include="images\source\kitchen9.jpg" />
+    <Content Include="images\source\living1.jpg" />
+    <Content Include="images\source\living10.jpg" />
+    <Content Include="images\source\living2.jpg" />
+    <Content Include="images\source\living3.jpg" />
+    <Content Include="images\source\living4.jpg" />
+    <Content Include="images\source\living5.jpg" />
+    <Content Include="images\source\living6.jpg" />
+    <Content Include="images\source\living7.jpg" />
+    <Content Include="images\source\living8.jpg" />
+    <Content Include="images\source\living9.jpg" />
+    <Content Include="images\source\master-bedroom1.jpg" />
+    <Content Include="images\source\master-bedroom10.jpg" />
+    <Content Include="images\source\master-bedroom2.jpg" />
+    <Content Include="images\source\master-bedroom3.jpg" />
+    <Content Include="images\source\master-bedroom4.jpg" />
+    <Content Include="images\source\master-bedroom5.jpg" />
+    <Content Include="images\source\master-bedroom6.jpg" />
+    <Content Include="images\source\master-bedroom7.jpg" />
+    <Content Include="images\source\master-bedroom8.jpg" />
+    <Content Include="images\source\master-bedroom9.jpg" />
+    <Content Include="images\source\pooja-room1.jpg" />
+    <Content Include="images\source\pooja-room10.jpg" />
+    <Content Include="images\source\pooja-room2.jpg" />
+    <Content Include="images\source\pooja-room3.jpg" />
+    <Content Include="images\source\pooja-room4.jpg" />
+    <Content Include="images\source\pooja-room5.jpg" />
+    <Content Include="images\source\pooja-room6.jpg" />
+    <Content Include="images\source\pooja-room7.jpg" />
+    <Content Include="images\source\pooja-room8.jpg" />
+    <Content Include="images\source\pooja-room9.jpg" />
+    <Content Include="images\source\safe.jpg" />
+    <Content Include="images\source\show-background-bathroom.jpg" />
+    <Content Include="images\source\show-background-dining-room.jpg" />
+    <Content Include="images\source\show-background-kids-bedroom.jpg" />
+    <Content Include="images\source\show-background-kitchen.jpg" />
+    <Content Include="images\source\show-background-living-room.jpg" />
+    <Content Include="images\source\show-background-master-bedroom.jpg" />
+    <Content Include="images\source\show-background-pooja-room.jpg" />
+    <Content Include="images\source\show-background-wardrobe.jpg" />
+    <Content Include="images\source\visit-background.jpg" />
+    <Content Include="images\source\visit-m1-1.jpg" />
+    <Content Include="images\source\visit-m1-2.jpg" />
+    <Content Include="images\source\visit-m1-3.jpg" />
+    <Content Include="images\source\visit-m1-4.jpg" />
+    <Content Include="images\source\visit-m5-img.png" />
+    <Content Include="images\source\visit-m5-vid.mp4" />
+    <Content Include="images\source\visit-slide1.jpg" />
+    <Content Include="images\source\visit-slide2.jpg" />
+    <Content Include="images\source\visit-slide3.jpg" />
+    <Content Include="images\source\visit-slide4.jpg" />
+    <Content Include="images\source\visit-slide5.jpg" />
+    <Content Include="images\source\visit-slide6.jpg" />
+    <Content Include="images\source\wardrobe1.jpg" />
+    <Content Include="images\source\wardrobe10.jpg" />
+    <Content Include="images\source\wardrobe2.jpg" />
+    <Content Include="images\source\wardrobe3.jpg" />
+    <Content Include="images\source\wardrobe4.jpg" />
+    <Content Include="images\source\wardrobe5.jpg" />
+    <Content Include="images\source\wardrobe6.jpg" />
+    <Content Include="images\source\wardrobe7.jpg" />
+    <Content Include="images\source\wardrobe8.jpg" />
+    <Content Include="images\source\wardrobe9.jpg" />
+    <Content Include="Kids.aspx" />
+    <Content Include="kitchen.aspx" />
+    <Content Include="Living.aspx" />
+    <Content Include="pooja.aspx" />
+    <Content Include="resetpassword.aspx" />
+    <Content Include="Services.aspx" />
+    <Content Include="ActivateAccount.aspx" />
+    <Content Include="Captcha.aspx" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\tiny-slider.css" />
+    <Content Include="Home.aspx" />
+    <Content Include="How.aspx" />
+    <Content Include="icon\4.jpg" />
+    <Content Include="icon\5.jpg" />
+    <Content Include="icon\6.jpg" />
+    <Content Include="icon\7.jpg" />
+    <Content Include="icon\9.jpg" />
+    <Content Include="icon\bed.jpg" />
+    <Content Include="icon\bg.jpg" />
+    <Content Include="icon\blog.jpg" />
+    <Content Include="icon\f.jpg" />
+    <Content Include="icon\g.jpg" />
+    <Content Include="icon\kitchen.jpg" />
+    <Content Include="icon\p1.png" />
+    <Content Include="icon\p2.png" />
+    <Content Include="icon\p3.png" />
+    <Content Include="icon\p4.png" />
+    <Content Include="icon\s.jpg" />
+    <Content Include="images\avtar.jpg" />
+    <Content Include="images\bag.svg" />
+    <Content Include="images\bowl-2.png" />
+    <Content Include="images\bowl-3.png" />
+    <Content Include="images\cart.svg" />
+    <Content Include="images\couch.png" />
+    <Content Include="images\cross.svg" />
+    <Content Include="images\dots-green.svg" />
+    <Content Include="images\dots-light.svg" />
+    <Content Include="images\dots-yellow.svg" />
+    <Content Include="images\envelope-outline.svg" />
+    <Content Include="images\img-grid-1.jpg" />
+    <Content Include="images\img-grid-2.jpg" />
+    <Content Include="images\img-grid-3.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo2.png" />
+    <Content Include="images\person-1.jpg" />
+    <Content Include="images\person-1.png" />
+    <Content Include="images\person_1.jpg" />
+    <Content Include="images\person_2.jpg" />
+    <Content Include="images\person_3.jpg" />
+    <Content Include="images\person_4.jpg" />
+    <Content Include="images\post-1.jpg" />
+    <Content Include="images\post-2.jpg" />
+    <Content Include="images\post-3.jpg" />
+    <Content Include="images\product-1.png" />
+    <Content Include="images\product-2.png" />
+    <Content Include="images\product-3.png" />
+    <Content Include="images\return.svg" />
+    <Content Include="images\sofa.png" />
+    <Content Include="images\source\bed.jpg" />
+    <Content Include="images\source\design-m1-1.jpg" />
+    <Content Include="images\source\design-m1-2.png" />
+    <Content Include="images\source\design-m1-3.jpg" />
+    <Content Include="images\source\design-m1-4.png" />
+    <Content Include="images\source\design-m1-5.jpg" />
+    <Content Include="images\source\design-m1-6.png" />
+    <Content Include="images\source\design-m1-7.png" />
+    <Content Include="images\source\design-m1-8.png" />
+    <Content Include="images\source\home-m6.png" />
+    <Content Include="images\source\how-m1-1.jpg" />
+    <Content Include="images\source\how-m1-2.jpg" />
+    <Content Include="images\source\how-m1-3.jpg" />
+    <Content Include="images\source\how-m1-4.jpg" />
+    <Content Include="images\source\how-m1-5.jpg" />
+    <Content Include="images\support.svg" />
+    <Content Include="images\truck.svg" />
+    <Content Include="images\user.svg" />
+    <Content Include="images\why-choose-us-img.jpg" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\home-code.js" />
+    <Content Include="js\tiny-slider.js" />
+    <Content Include="Register.aspx" />
+    <Content Include="shop.aspx" />
+    <Content Include="Signin.aspx" />
+    <Content Include="SigninConfirmWithOTP.aspx" />
+    <Content Include="SigninWithOTP.aspx" />
+    <Content Include="thankyou.aspx" />
+    <Content Include="Visit.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="almira.aspx.cs">
+      <DependentUpon>almira.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="almira.aspx.designer.cs">
+      <DependentUpon>almira.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bathroom.aspx.cs">
+      <DependentUpon>bathroom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bathroom.aspx.designer.cs">
+      <DependentUpon>bathroom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bedroom.aspx.cs">
+      <DependentUpon>Bedroom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bedroom.aspx.designer.cs">
+      <DependentUpon>Bedroom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="book.aspx.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="book.aspx.designer.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dining.aspx.cs">
+      <DependentUpon>Dining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dining.aspx.designer.cs">
+      <DependentUpon>Dining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forgotpassword.aspx.cs">
+      <DependentUpon>Forgotpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forgotpassword.aspx.designer.cs">
+      <DependentUpon>Forgotpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kids.aspx.cs">
+      <DependentUpon>Kids.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kids.aspx.designer.cs">
+      <DependentUpon>Kids.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kitchen.aspx.cs">
+      <DependentUpon>kitchen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kitchen.aspx.designer.cs">
+      <DependentUpon>kitchen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Living.aspx.cs">
+      <DependentUpon>Living.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Living.aspx.designer.cs">
+      <DependentUpon>Living.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pooja.aspx.cs">
+      <DependentUpon>pooja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pooja.aspx.designer.cs">
+      <DependentUpon>pooja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="resetpassword.aspx.cs">
+      <DependentUpon>resetpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resetpassword.aspx.designer.cs">
+      <DependentUpon>resetpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActivateAccount.aspx.cs">
+      <DependentUpon>ActivateAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActivateAccount.aspx.designer.cs">
+      <DependentUpon>ActivateAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Captcha.aspx.cs">
+      <DependentUpon>Captcha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Captcha.aspx.designer.cs">
+      <DependentUpon>Captcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="How.aspx.cs">
+      <DependentUpon>How.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="How.aspx.designer.cs">
+      <DependentUpon>How.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop.aspx.cs">
+      <DependentUpon>shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop.aspx.designer.cs">
+      <DependentUpon>shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signin.aspx.cs">
+      <DependentUpon>Signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signin.aspx.designer.cs">
+      <DependentUpon>Signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SigninConfirmWithOTP.aspx.cs">
+      <DependentUpon>SigninConfirmWithOTP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SigninConfirmWithOTP.aspx.designer.cs">
+      <DependentUpon>SigninConfirmWithOTP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SigninWithOTP.aspx.cs">
+      <DependentUpon>SigninWithOTP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SigninWithOTP.aspx.designer.cs">
+      <DependentUpon>SigninWithOTP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="thankyou.aspx.cs">
+      <DependentUpon>thankyou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thankyou.aspx.designer.cs">
+      <DependentUpon>thankyou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visit.aspx.cs">
+      <DependentUpon>Visit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visit.aspx.designer.cs">
+      <DependentUpon>Visit.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="scss\style.scss" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\NewFolder1\" />
+    <Folder Include="photo\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53733</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53733/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
